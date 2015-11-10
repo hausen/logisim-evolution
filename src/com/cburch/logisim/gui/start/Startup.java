@@ -258,8 +258,8 @@ public class Startup {
 				ret.exitAfterStartup = true;
 			} else if (arg.equals("-clearprefs")) {
 				// already handled above
-			} else if (arg.equals("-analyze")) {
-				Main.ANALYZE = true;
+			} else if (arg.equals("-noanalyze")) {
+				Main.ANALYZE = false;
 			} else if (arg.equals("-noupdates")) {
 				Main.UPDATE = false;
 			} else if (arg.equals("-questa")) {
@@ -312,6 +312,7 @@ public class Startup {
 		System.err.println("   " + Strings.get("argHelpOption")); // OK
 		System.err.println("   " + Strings.get("argLoadOption")); // OK
 		System.err.println("   " + Strings.get("argLocaleOption")); // OK
+		System.err.println("   " + Strings.get("argNoAnalyzeOption")); // OK
 		System.err.println("   " + Strings.get("argNoSplashOption")); // OK
 		System.err.println("   " + Strings.get("argPlainOption")); // OK
 		System.err.println("   " + Strings.get("argSubOption")); // OK
